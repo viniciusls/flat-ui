@@ -25,6 +25,11 @@
     &-primary {
         color: #4183D7;
         border: 2px solid #4183D7;
+
+        &:hover {
+            color: white;
+            background-color: #4183D7;
+        }
     }
 
     &-success {

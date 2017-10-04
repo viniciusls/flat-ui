@@ -21,3 +21,6 @@
   .fbtn-primary {
     color: #4183D7;
     border: 2px solid #4183D7; }
+    .fbtn-primary:hover {
+      color: white;
+      background-color: #4183D7; }
