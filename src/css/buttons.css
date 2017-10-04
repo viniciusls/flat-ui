@@ -36,3 +36,6 @@
     .fbtn-warning:hover {
       color: white;
       background-color: #F9BF3B; }
+  .fbtn-danger {
+    color: #F62459;
+    border: 2px solid #F62459; }
