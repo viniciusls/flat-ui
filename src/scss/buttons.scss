@@ -35,6 +35,11 @@
     &-success {
         color: #2ECC71;
         border: 2px solid #2ECC71;
+
+        &:hover {
+            color: white;
+            background-color: #2ECC71;
+        }
     }
 
     &-warning {
