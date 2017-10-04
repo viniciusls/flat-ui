@@ -2,10 +2,33 @@
     cursor: pointer;
     border-radius: 3px;
     padding: 0 15px;
+    background-color: transparent;
+    font-size: 14px;
     letter-spacing: 0.5;
     line-height: 35px;
     text-align: center;
     text-decoration: none;
     transition: background-color 0.15s, color 0.15s ease-in-out;
     white-space: nowrap;
+
+    &-info {
+        color: #4183D7;
+        border: 2px solid #4183D7;
+    }
+    
+    &-primary {
+
+    }
+
+    &-success {
+
+    }
+
+    &-warning {
+
+    }
+
+    &-danger {
+
+    }
 }
