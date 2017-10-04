@@ -55,5 +55,10 @@
     &-danger {
         color: #F62459;
         border: 2px solid #F62459;
+
+        &:hover {
+            color: white;
+            background-color: #F62459;
+        }
     }
 }
