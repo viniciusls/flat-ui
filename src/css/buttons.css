@@ -30,3 +30,6 @@
     .fbtn-success:hover {
       color: white;
       background-color: #2ECC71; }
+  .fbtn-warning {
+    color: #F9BF3B;
+    border: 2px solid #F9BF3B; }
