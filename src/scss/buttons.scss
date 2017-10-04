@@ -1,0 +1,11 @@
+.fbtn {
+    cursor: pointer;
+    border-radius: 3px;
+    padding: 0 15px;
+    letter-spacing: 0.5;
+    line-height: 35px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.15s, color 0.15s ease-in-out;
+    white-space: nowrap;
+}
