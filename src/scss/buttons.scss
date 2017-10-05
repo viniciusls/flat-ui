@@ -1,3 +1,9 @@
+$info-color: #00B5B5;
+$primary-color: #4183D7;
+$success-color: #2ECC71;
+$warning-color: #F9BF3B;
+$danger-color: #F62459;
+
 @mixin fbtn-base($color) {
     color: $color;
     border: 2px solid $color;
@@ -23,22 +29,22 @@
     white-space: nowrap;
 
     &-info {
-        @include fbtn-base(#00B5B5);
+        @include fbtn-base($info-color);
     }
     
     &-primary {
-        @include fbtn-base(#4183D7);
+        @include fbtn-base($primary-color);
     }
 
     &-success {
-        @include fbtn-base(#2ECC71);
+        @include fbtn-base($success-color);
     }
 
     &-warning {
-        @include fbtn-base(#F9BF3B);
+        @include fbtn-base($warning-color);
     }
 
     &-danger {
-        @include fbtn-base(#F62459);
+        @include fbtn-base($danger-color);
     }
 }
