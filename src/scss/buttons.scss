@@ -1,3 +1,13 @@
+@mixin fbtn-base($color) {
+    color: $color;
+    border: 2px solid $color;
+    
+    &:hover {
+        color: white;
+        background-color: $color;
+    }
+}
+
 .fbtn {
     cursor: pointer;
     border-radius: 3px;
@@ -13,52 +23,22 @@
     white-space: nowrap;
 
     &-info {
-        color: #00B5B5;
-        border: 2px solid #00B5B5;
-        
-        &:hover {
-            color: white;
-            background-color: #00B5B5;
-        }
+        @include fbtn-base(#00B5B5);
     }
     
     &-primary {
-        color: #4183D7;
-        border: 2px solid #4183D7;
-
-        &:hover {
-            color: white;
-            background-color: #4183D7;
-        }
+        @include fbtn-base(#4183D7);
     }
 
     &-success {
-        color: #2ECC71;
-        border: 2px solid #2ECC71;
-
-        &:hover {
-            color: white;
-            background-color: #2ECC71;
-        }
+        @include fbtn-base(#2ECC71);
     }
 
     &-warning {
-        color: #F9BF3B;
-        border: 2px solid #F9BF3B;
-
-        &:hover {
-            color: white;
-            background-color: #F9BF3B;
-        }
+        @include fbtn-base(#F9BF3B);
     }
 
     &-danger {
-        color: #F62459;
-        border: 2px solid #F62459;
-
-        &:hover {
-            color: white;
-            background-color: #F62459;
-        }
+        @include fbtn-base(#F62459);
     }
 }
