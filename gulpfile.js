@@ -46,7 +46,6 @@ gulp.task('watch', function() {
 		console.log('File ' + event.path + ' was ' + event.type + ', running tasks...');
 	});
 	gulp.watch('src/js/*.js', ['uglify']);
-	gulp.watch('src/css/*.css', ['cssmin']);
 });
 
 gulp.task('default', function (callback) {
