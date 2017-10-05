@@ -15,10 +15,13 @@ $danger-color: #F62459;
 }
 
 .fbtn {
+    display: inline-block;
     cursor: pointer;
     border-radius: 3px;
+    box-sizing: border-box;
     padding: 0 15px;
     background-color: transparent;
+    font-family: inherit;
     font-size: 14px;
     font-weight: 500;
     letter-spacing: 0.5;
