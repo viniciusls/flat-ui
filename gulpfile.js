@@ -16,11 +16,15 @@ gulp.task('clean', function () {
 
 gulp.task('sass', function () {
 	gulp.src('src/scss/*.scss')
-		.pipe(sass().on('error', sass.logError))
+		.pipe(sass({ style: 'compressed' }).on('error', sass.logError))
 		.pipe(autoprefixer({
 			browsers: ['last 2 version', 'safari 5', 'ie 11', 'opera 49', 'ios 6', 'android 4']
 		}))
-		.pipe(gulp.dest('src/css'));
+		.pipe(cleanCSS())
+		.pipe(rename({
+			suffix: '.min'
+		}))
+		.pipe(gulp.dest('dist/css'));
 });
 
 gulp.task('jshint',function () {
@@ -37,15 +41,6 @@ gulp.task('uglify', function () {
 		.pipe(gulp.dest('dist/js'));
 });
 
-gulp.task('cssmin', function() {
-	gulp.src('src/css/*.css')
-		.pipe(cleanCSS())
-		.pipe(rename({
-			suffix: '.min'
-		}))
-		.pipe(gulp.dest('dist/css'));
-
-});
 gulp.task('watch', function() {
 	gulp.watch('src/scss/*.scss', ['sass']).on('change', function(event) {
 		console.log('File ' + event.path + ' was ' + event.type + ', running tasks...');
@@ -55,5 +50,5 @@ gulp.task('watch', function() {
 });
 
 gulp.task('default', function (callback) {
-	return runSequence('clean', ['jshint', 'sass','uglify','cssmin','watch'], callback)
+	return runSequence('clean', ['jshint', 'sass', 'uglify', 'watch'], callback)
 });
