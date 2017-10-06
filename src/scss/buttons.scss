@@ -13,6 +13,10 @@ $danger-color: #F62459;
         background-color: $color;
         text-decoration: none;
     }
+
+    &:active, &:focus, &:visited {
+        text-decoration: none;
+    }
 }
 
 .fbtn {
