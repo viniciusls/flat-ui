@@ -52,3 +52,15 @@ $danger-color: #F62459;
         @include fbtn-base($danger-color);
     }
 }
+
+a.disabled {
+    pointer-events: none;
+}
+
+.disabled {
+    cursor: not-allowed;
+    opacity: 0.65;
+    filter: alpha(opacity=65);
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
